@@ -10,14 +10,19 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.8.1",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
+    "@types/node": "^18.14.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^3.1.0",
     "@vitest/coverage-c8": "^0.28.5",
     "@vitest/ui": "^0.28.5",
@@ -31,6 +36,7 @@
     "eslint-plugin-testing-library": "^5.10.2",
     "global-jsdom": "^8.7.0",
     "jest-environment-jsdom": "^29.4.3",
+    "jest-styled-components": "^7.1.1",
     "jsdom": "^21.1.0",
     "prettier": "^2.8.4",
     "vite": "^4.1.0",
