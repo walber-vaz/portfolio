@@ -1,7 +1,8 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { useThemeContext } from './context/useThemeContext';
+import useLocalStorage from './hooks/useLocalStorage';
 import About from './page/About';
 import Contact from './page/Contact';
 import Home from './page/Home';
@@ -10,11 +11,11 @@ import dark from './styles/theme/dark';
 import light from './styles/theme/light';
 
 const App = () => {
-  const [theme, setTheme] = useState(light);
+  const [theme, setTheme] = useLocalStorage('theme', light);
 
   const toggleTheme = useCallback(() => {
     setTheme(theme.title === 'light' ? dark : light);
-  }, [theme]);
+  }, [theme, setTheme]);
 
   const values = useMemo(() => ({ theme, toggleTheme }), [theme, toggleTheme]);
 
