@@ -39,7 +39,7 @@
     "global-jsdom": "^8.7.0",
     "jest-environment-jsdom": "^29.4.3",
     "jest-styled-components": "^7.1.1",
-    "jsdom": "^21.1.0",
+    "jsdom": "^21.1.1",
     "prettier": "^2.8.4",
     "prop-types": "^15.8.1",
     "vite": "^4.1.0",
